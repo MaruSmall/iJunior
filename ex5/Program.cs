@@ -9,10 +9,10 @@ namespace ex5
             int number1 = 10;
             int number2 = 30;
             Console.WriteLine("Переменные до обмена местами n1=" + number1 + ", n2=" + number2);
-            int help = 0;
-            help = number1;
+            int number3 = 0;
+            number3 = number1;
             number1 = number2;
-            number2 = help;
+            number2 = number3;
             Console.WriteLine("Переменные после обмена местами n1=" + number1 + ", n2=" + number2);
         }
     }
