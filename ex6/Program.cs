@@ -9,33 +9,11 @@ namespace ex6
             int pictures = 52;
             int picturesInRowCount = 3;
             int picturesAmountLeft=0;
-            while (pictures != 1)
-            {
-                if (pictures % picturesInRowCount == 0)
-                {
-                   pictures -= picturesInRowCount;
-                   // Console.WriteLine("**");
-                }
-                else
-                {
-                    pictures -= picturesInRowCount;
-                    picturesAmountLeft++;
-                }
-            }
-            Console.WriteLine(picturesAmountLeft + " рядов из картинок по 3 шт, кол-во оставщихся картинок: "+ pictures);
 
-            ///////////////////////////////////////////////////////////
-            //while (pictures % countPictures == 1)
-            //{
-            //    if(pictures == 1)
-            //    {
-            //        break;
-            //    }
+            int rowCount = pictures / picturesInRowCount;
+            picturesAmountLeft = pictures % picturesInRowCount; 
 
-            //    pictures -= countPictures;
-            //   // Console.WriteLine("***");
-            //}
-
+            Console.WriteLine(rowCount + " рядов из картинок по 3 шт, кол-во оставщихся картинок: "+ picturesAmountLeft);
         }
     }
 }
