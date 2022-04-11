@@ -6,18 +6,18 @@ namespace ex8
     {
         static void Main(string[] args)
         {
-            int time = 10;
-            int queue;
+            int timeOfReceiptInMinutes = 10;
+            int peopleInQueue;
+            int minutesInHour = 60;
 
             Console.WriteLine("Введите кол-во людей в очереди");
-            queue=Convert.ToInt32(Console.ReadLine());
+            peopleInQueue = Convert.ToInt32(Console.ReadLine());
 
-            int timeInQueue = time * queue;
+            int timeInQueue = timeOfReceiptInMinutes * peopleInQueue;
+            int hoursSpentInLine = timeInQueue / minutesInHour;
+            int minutesSpentInLine = timeInQueue % minutesInHour;
 
-            int hour = timeInQueue / 60;
-            int minute = timeInQueue % 60;
-
-            Console.WriteLine("Вы проведете в очереди "+hour+" часа и " +minute+" минут");
+            Console.WriteLine("Вы проведете в очереди "+ hoursSpentInLine + " часа и " + minutesSpentInLine + " минут");
 
         }
     }
