@@ -10,10 +10,11 @@ namespace ex6
             int picturesInRowCount = 3;
             int picturesAmountLeft=0;
 
-            int rowCount = pictures / picturesInRowCount;
+            int filledRowCount = pictures / picturesInRowCount;
             picturesAmountLeft = pictures % picturesInRowCount; 
 
-            Console.WriteLine(rowCount + " рядов из картинок по 3 шт, кол-во оставщихся картинок: "+ picturesAmountLeft);
+            Console.WriteLine(filledRowCount + " рядов из картинок по "+picturesInRowCount+" шт, " +
+                "кол-во оставщихся картинок: "+ picturesAmountLeft);
         }
     }
 }
