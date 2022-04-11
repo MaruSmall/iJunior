@@ -6,14 +6,14 @@ namespace Ex2
     {
         static void Main(string[] args)
         {
-            int n1 = -12;
+            int number1 = -12;
             uint speed = 10;
             bool isDead=false;
             string name = "Петя";
-            char ch = 'C';
-            float f = 15.09f;
+            char char1 = 'C';
+            float float1 = 15.09f;
             double hp = 45.8;
-            var a=n1 + speed;
+            var a=number1 + speed;
             byte byte1 = 200;
             int count = 0;
         }
